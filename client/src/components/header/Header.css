@@ -1,0 +1,28 @@
+.navBarContainer {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+
+}
+
+.img-logo{
+  width: 10%;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchContainer > input {
+  color: #fff;
+  background-color: transparent;
+  max-width: 150px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

@@ -3,18 +3,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 250px;
   height: 150px;
+  min-width: 250px;
 }
 
-.movie-container > div {
+.movieInfo {
   width: 100%;
   position: absolute;
   bottom: 5px;
   padding: 0 5px;
-}
-
-.movieInfo {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,4 +21,18 @@
   color: #fff;
   font-weight: bold;
   max-width: 150px;
+}
+
+.movieInfo > img {
+  cursor: pointer;
+}
+
+.movieInfo > img:hover {
+  fill: red;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }

@@ -1,29 +1,20 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 import './ListMovies.css';
 
 import { SingleMovie } from '../movie/SingleMovie';
 
-const API_URL = "https://movied.herokuapp.com/discover"
-
-export const ListMovies = () => {
-  const [movieList, setMovieList] = useState([]);
-
-  useEffect(() => {
-    fetchMovies();
-  }, [])
-
-  async function fetchMovies () {
-    const movies = await fetch(API_URL);
-    const allMovies = await movies.json();
-    setMovieList(allMovies);
-  }
+export const ListMovies = ({ title, allMovies, addMovie }) => {
 
   return (
-    <div className="listMovie__container">
-      {movieList.map(movie => (
-        <SingleMovie key={movie.id} movie={movie} />
-      ))}
+    <div className='listMovies__container'>
+      <h2 className='listTitleMovies'>{title}</h2>
+
+      <div className="listMovie__container">
+        {allMovies.map(movie => (
+          <SingleMovie key={movie.id} movie={movie} addMovie={() => addMovie(movie)} />
+        ))}
+      </div>
     </div>
   )
 }

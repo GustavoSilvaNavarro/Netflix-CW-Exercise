@@ -1,0 +1,8 @@
+.appContainer {
+  width: 100%;
+}
+
+.moviesContainerList {
+  width: 90%;
+  margin: 1.5rem auto;
+}
