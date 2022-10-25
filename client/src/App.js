@@ -22,7 +22,14 @@ function App() {
   }
 
   const addToWishList = (movie) => {
-    setWishList([...wishList, movie]);
+    const copies = [...wishList];
+    const filteredWishList = copies.filter((el)=> el.id !== movie.id);
+
+    if(copies.find(el=> el.id === movie.id)) {
+      setWishList(filteredWishList);
+    } else {
+      setWishList([...wishList, movie]);
+    }
   }
 
   return (

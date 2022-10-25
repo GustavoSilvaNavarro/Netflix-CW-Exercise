@@ -1,5 +1,3 @@
-// import { useState, useEffect } from "react";
-
 import './ListMovies.css';
 
 import { SingleMovie } from '../movie/SingleMovie';
