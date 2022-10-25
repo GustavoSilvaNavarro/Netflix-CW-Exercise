@@ -1,0 +1,27 @@
+.movie-container {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 150px;
+}
+
+.movie-container > div {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  padding: 0 5px;
+}
+
+.movieInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleMovie {
+  color: #fff;
+  font-weight: bold;
+  max-width: 150px;
+}
