@@ -9,7 +9,7 @@ import { ListMovies } from './components/discover/ListMovies';
 const API_URL = "https://movied.herokuapp.com/discover"
 
 function App() {
-  // console.log('App is rendering!');
+  console.log('App is rendering!');
   const [movieList, setMovieList] = useState([]);
   const [wishList, setWishList] = useState([]);
   const [actionMovies] = useActionMovies(movieList);
