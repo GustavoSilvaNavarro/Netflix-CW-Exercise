@@ -11,3 +11,27 @@
   overflow-x: scroll;
   gap: 1rem;
 }
+
+.listMovie__container::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+.listMovie__container::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 4px;
+}
+
+.listMovie__container::-webkit-scrollbar-thumb:hover {
+  background: #141414;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.listMovie__container::-webkit-scrollbar-thumb:active {
+  background-color: #141414;
+}
+
+.listMovie__container::-webkit-scrollbar-track {
+background: transparent;
+border-radius: 4px;
+}

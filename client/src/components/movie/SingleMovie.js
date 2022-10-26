@@ -1,11 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './SingleMovie.css';
 
 import add from '../../assets/btn-add.svg';
 import added from '../../assets/btn-added.svg';
 
 export const SingleMovie = (props) => {
-  const [movieAdded, setMovieAdded] = useState(false);
+  const [movieAdded, setMovieAdded] = useState(props.movie.stateButton);
+
+  useEffect(() => {
+    setMovieAdded(props.movie.stateButton);
+  }, [props.movie]);
 
   const handleClick = () => {
     props.addMovie();
